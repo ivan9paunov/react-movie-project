@@ -1,0 +1,19 @@
+@import 'custom.scss';
+
+$body-bg: rgb(245, 245, 245);
+
+// Carousel
+$carousel-control-color: gray;
+$carousel-caption-color: gray;
+$carousel-indicator-active-bg: gray;
+
+// Button
+$theme-colors: (
+    "secondary": #693455,
+);
+
+//Navbar
+$navbar-light-color: #693455;
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
