@@ -13,19 +13,16 @@ import {
             
             <CardImg src={ProfilePic}/>
             <CardBody className="text-center">
-              <CardLink href="#" className="userLinks">Моят профил</CardLink>  
+              <CardLink href="/profile" className="userLinks">Моят профил</CardLink>  
             </CardBody>
             <CardBody className="text-center">
-              <CardLink href="#" className="userLinks">Любими филми</CardLink>  
+              <CardLink href="/addMovie" className="userLinks">Добави филми</CardLink>  
             </CardBody>
             <CardBody className="text-center">
-              <CardLink href="#" className="userLinks">Любими сериали</CardLink>  
+              <CardLink href="/addTvSerie" className="userLinks">Добави сериали</CardLink>  
             </CardBody>
             <CardBody className="text-center">
-              <CardLink href="#" className="userLinks">За гледане по-късно</CardLink>  
-            </CardBody>
-            <CardBody className="text-center">
-              <CardLink href="#" className="userLinks">Изход</CardLink>  
+              <CardLink href="#" className="userLinks">Любими</CardLink>  
             </CardBody>
             
           </CardBody>
