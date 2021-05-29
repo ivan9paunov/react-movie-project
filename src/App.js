@@ -5,6 +5,9 @@ import Movies from './pages/Movies';
 import MovieDetails from './pages/MovieDetails';
 import TVSeries from './pages/TVSeries';
 import TVSeriesDetails from './pages/TVSeriesDetails';
+import AddMovie from './pages/AddMovie';
+import AddTvSerie from './pages/AddTvSerie';
+
 
 import {
   BrowserRouter as Router,
@@ -49,6 +52,18 @@ const routes = [
     path: '/profile',
     main: () => <DefaultLayout>
       <Profile></Profile>
+    </DefaultLayout>
+  },
+  {
+    path: '/addmovie',
+    main: () => <DefaultLayout>
+      <AddMovie></AddMovie>
+    </DefaultLayout>
+  },
+  {
+    path: '/addTvSerie',
+    main: () => <DefaultLayout>
+      <AddTvSerie></AddTvSerie>
     </DefaultLayout>
   },
   
