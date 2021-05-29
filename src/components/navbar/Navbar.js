@@ -9,15 +9,13 @@ import {
   NavLink,
 } from 'reactstrap';
 import {Link} from 'react-router-dom';
-import { ReactComponent as Logo } from '../../logo.svg'
+import UserMenu from "../user/UserMenu.js";
+import { ReactComponent as Logo } from '../../logo.svg';
 
-const Example = (props) => {
+
+const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
-
-    // TODO create an array representing NavLink items in Navbar.js 
-    // Render with map function.   
   return (
     <Navbar color="light" light expand="md">
         <div className="container">
@@ -39,12 +37,12 @@ const Example = (props) => {
                 <NavItem>
                     <NavLink tag={Link} to="/profile">Профил</NavLink>
                 </NavItem>
-                  
                 </Nav>
+                <UserMenu/>
             </Collapse>
         </div>
     </Navbar>
   );
 }
 
-export default Example;
+export default Navigation;
