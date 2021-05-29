@@ -1,16 +1,3 @@
-За реализация е използвано следното API
-
-https://www.themoviedb.org/documentation/api?language=en-US
-
-Графичният интерфейс има следната функционалност:
-
-Избор на година, сортиране по критерий като "популярност", търсене по жанр и визуализиране на върнатите резултати
-
-Като в примера е изпълнен следният request
-
-https://api.themoviedb.org/3/discover/movie?year=2021&api_key=f1f5877c7d8c646b47bf279e9130fdd1
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
