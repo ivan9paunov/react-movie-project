@@ -98,7 +98,7 @@ const UserMenu = (props) => {
   
       return <Button onClick={()=> {
         setModal(true)
-        }}>Вход</Button>  
+        }}>Вход</Button>
     }
   
     return (
