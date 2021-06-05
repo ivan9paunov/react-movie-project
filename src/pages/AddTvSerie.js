@@ -1,11 +1,15 @@
 import { useQuery, gql } from '@apollo/client';
 import CreateTvSerie from "../components/tv/CreateTvSerie";
+import AddTvSerieItem from "../components/tv/AddTvSerieItem";
 
 const GET_TVSERIES = gql`
     query getTvSeries {
         tvseries {
             _id
             title
+            description
+            rating 
+            image
         }
     }
 `;
@@ -19,9 +23,13 @@ function AddTvSeries(props) {
             return null;
         }
         const tvseriesList = data.tvseries.map(tvserie => {
-            return <div
-                key={tvserie._id}
-            >{ tvserie.title }</div>
+            return <AddTvSerieItem
+            key={tvserie._id}
+            title={tvserie.title}
+            description={tvserie.description}
+            rating={tvserie.rating}
+            image={tvserie.image}
+            ></AddTvSerieItem>
         })
         return tvseriesList;
     }

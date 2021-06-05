@@ -1,11 +1,15 @@
 import { useQuery, gql } from '@apollo/client';
 import CreateMovie from "../components/movie/CreateMovie";
+import AddMovieItem from "../components/movie/AddMovieItem";
 
 const GET_MOVIES = gql`
     query getMovies {
         movies {
             _id
             title
+            description
+            rating 
+            image
         }
     }
 `;
@@ -19,9 +23,13 @@ function AddMovies(props) {
             return null;
         }
         const moviesList = data.movies.map(movie => {
-            return <div
+            return <AddMovieItem
                 key={movie._id}
-            >{ movie.title }</div>
+                title={movie.title}
+                description={movie.description}
+                rating={movie.rating}
+                image={movie.image}
+            ></AddMovieItem>
         })
         return moviesList;
     }
