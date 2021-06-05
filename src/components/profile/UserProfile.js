@@ -22,7 +22,7 @@ import {
               <CardLink href="/addTvSerie" className="userLinks">Добави сериали</CardLink>  
             </CardBody>
             <CardBody className="text-center">
-              <CardLink href="#" className="userLinks">Любими</CardLink>  
+              <CardLink href="#" className="userLinks">Изход</CardLink>  
             </CardBody>
             
           </CardBody>
