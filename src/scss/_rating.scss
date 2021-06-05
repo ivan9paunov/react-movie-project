@@ -1,0 +1,23 @@
+.movie-rating {
+    .CircularProgressbar-path {
+        stroke: #693455 !important;
+    }
+    .CircularProgressbar-text {
+        fill: #693455 !important;
+        font-size: 32px !important;
+        font-weight: bold;
+        dominant-baseline: central !important;
+    }
+}
+
+.tvserie-rating {
+    .CircularProgressbar-path {
+        stroke: #693455 !important;
+    }
+    .CircularProgressbar-text {
+        fill: #693455 !important;
+        font-size: 32px !important;
+        font-weight: bold;
+        dominant-baseline: central !important;
+    }
+}
